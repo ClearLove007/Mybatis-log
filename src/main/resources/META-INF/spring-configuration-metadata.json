@@ -1,0 +1,10 @@
+{
+  "properties": [
+	{
+	  "name": "mybatis.print",
+	  "type": "java.lang.Boolean",
+	  "description": "开启sql打印",
+	  "defaultValue": true
+	}
+  ]
+}
