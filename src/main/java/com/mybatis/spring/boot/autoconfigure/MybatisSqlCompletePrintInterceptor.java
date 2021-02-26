@@ -130,9 +130,9 @@ public class MybatisSqlCompletePrintInterceptor implements Interceptor, Ordered 
                         paramValueStr =  value + "";
                     }
                     // mybatis generator 中的参数不打印出来
-                    if(!propertyName.contains("frch_criterion")){
-                        paramValueStr = "/*" + propertyName + "*/" + paramValueStr;
-                    }
+//                    if(!propertyName.contains("frch_criterion")){
+//                        paramValueStr = "/*" + propertyName + "*/" + paramValueStr;
+//                    }
                     // java.lang.IllegalArgumentException: Illegal group reference
                     // https://github.com/WangJi92/mybatis-sql-log/issues/4
                     sql = sql.replaceFirst("\\?", Matcher.quoteReplacement(paramValueStr));
